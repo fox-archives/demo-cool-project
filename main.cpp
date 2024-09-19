@@ -1,22 +1,13 @@
 #include <iostream>
+// You're not supposed to "#include" other files that end
+// with ".cpp", but I don't care.
+#include "stuff.cpp"
 
 int main() {
-        std::cout << "This is a simple program\n";
+        std::cout << "This is a simple program\n\n";
 
-        std::cout << "What is your name?\n";
-        std::string name;
-        std::cin >> name;
-        std::cout << "Your name is: \"" + name + "\". That is a cool name";
+        askQuestions();
 
-        std::cout << "What is your age?\n";
-        std::string age;
-        std::cin >> age;
-        std::cout << "Your age is: \"" + age + "\"." + age + "? I bet your back hurts...";
-
-        std::cout << "What is your favorite hobby?\n";
-        std::string hobby;
-        std::cin >> hobby;
-        std::cout << "Your favorite hobby is doing \"" + hobby + "\"? That's kind of lame...";
-
-        std::cout << "This concludes my cool and epic program. Goodbye!";
+        std::cout << "\n\n";
+        std::cout << "This concludes my cool and epic program. Goodbye!\n";
 }
